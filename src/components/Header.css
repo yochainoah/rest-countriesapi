@@ -25,7 +25,7 @@
 .header_element button > img{
     color:black;
 }
-.header_element button > {
+.header_element button{
     font-family: 'Nunito Sans';
     font-size:16px;
 }
