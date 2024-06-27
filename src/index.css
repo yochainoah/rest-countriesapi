@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  margin: 0;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  height: 1024px;
+
+}
+.container{
+  width: 1440px;
+  margin: auto;
+  max-width: 92%;
+  height: 100%;
+}
+.countries_content{
+  padding-top: 80px;
+  width:95%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+}
+.filters{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filters.container{
+  max-width: 95%;
+}
+.header_element.dark {
+  background-color: #2B3844;
+  color: white;
+  box-shadow:4px 0 4px 0 rgba(0,0,0,0.25); 
+}
+.country_card.dark {
+  background-color: #2B3844;
+  color: white;
+  box-shadow:0 0 0 0 ;
+}
+.input_box.dark{
+  box-shadow:  0 2px 9px 0 hsla(0, 0%, 0%, 0.532);
+  
+}
+.input_box.dark::placeholder{
+  color: white;
+}
+.light {
+  background-color: white;
+  color: black;
+}
+
+.dark {
+  background-color: #202C36;
+  color: white;
+}
+.border_countries .dark{
+  background-color: #2B3844;
+}
+.semi-bold{
+  font-weight: 600;
+}
+.extrabold{
+  font-weight: 800;
+}
+h1{
+  font-size: 32px;
+}
+
+@media screen and (max-width:500px) {
+  .filters{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    margin-bottom: 32px;
+  }
+  .input_box{
+    width:100%;
+  }
+  .header_element h1{
+    font-size: 14px;
+  }
+  .header_element p{
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+@media only screen and (min-width:500px) and (max-width:1000px) {
+  .filters{
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 32px;
+  }
+
+}

@@ -1,0 +1,30 @@
+.country_card{
+    border-radius: 5px;
+    background-color: #fff;
+    /* width:264px; */
+    /* height:336px; */
+    box-shadow:  0 5px 10px 1px hsl(0, 0%, 93%);
+    text-decoration: none;
+    color: #000;
+}
+.country_card img{
+    width:100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    object-position: 0px 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.country_details{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap:8px;
+    margin-left:24px;
+    margin-bottom: 45px;
+}
+.country_details h3{
+    font-size:18px;
+    font-weight: 800;
+    margin: 24px 0 16px 0;
+}

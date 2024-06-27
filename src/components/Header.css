@@ -1,0 +1,48 @@
+
+.header_element{
+    position:fixed;
+    width:100%;
+    top:0px;
+    left:0px;
+    background-color:#fff ;
+    box-shadow:  0 5px 10px 1px hsl(0, 0%, 93%);
+}
+.header_element h1{
+    font-size: 24px;
+    font-weight:800;
+}
+.header_element button{
+    background-color: #fff;
+    border:none;
+    display:flex;
+    flex-wrap: nowrap;
+    gap:8px;
+    align-items: center;
+    width:120px;
+    height:22px;
+    cursor: pointer;
+}
+.header_element button > img{
+    color:black;
+}
+.header_element button > {
+    font-family: 'Nunito Sans';
+    font-size:16px;
+}
+.header_element div{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+
+}
+/* remember this */
+.container{
+    width: 1440px;
+    margin: auto;
+    max-width: 95%;
+}
+button.dark{
+    background-color: #2B3844;
+    color: white;
+}

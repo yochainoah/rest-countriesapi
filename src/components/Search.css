@@ -1,0 +1,22 @@
+
+
+.input_box{
+    width:480px;
+    height:56px;
+    border-radius: 5px;
+    border:none;
+    background-image: url('/search_icon.svg');
+    background-repeat: no-repeat;
+    background-position: 17px 19px;
+    padding: 18px 20px 18px 50px;
+    margin: 48px 0;
+    outline: none;
+    box-shadow:  0 5px 10px 1px hsl(0, 0%, 93%);
+}
+.input_box.light{
+    background-image: url('./light-mode-search.svg');
+}
+.input_box.dark{
+    background-image: url('./dark-mode-search.svg');
+    background-color: #2B3844;
+}
