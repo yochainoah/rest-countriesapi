@@ -6,7 +6,19 @@ export default function CountryPage(){
     let border_countries = [];
     const {theme} = useTheme();
     const {countryName} = useParams();
-    const country_data = data.find((country)=> country.name === countryName);
+    const country_data = data.find((country) => country.name === countryName);
+    const arrow_color = theme === 'light'?  "./arrow-back-light.svg": "./arrow-back-dark.svg" ;
+    console.log('country data',country_data)
+    
+
+    if (!country_data) {
+        return (
+            <div className="container country-container">
+                <p>Country not found.</p>
+                <Link to='/' className={`back-link ${theme}`}><img src={arrow_color} alt="Back arrow" />Back</Link>
+            </div>
+        );
+    }
     let borders_exist = 'borders' in country_data;
     let currencies = 'currencies' in country_data;
     if(borders_exist) {
@@ -15,7 +27,7 @@ export default function CountryPage(){
             return borderCountry.name;
         })
     }
-    const arrow_color = theme === 'light'?  "./arrow-back-light.svg": "./arrow-back-dark.svg" ;
+    
     // console.log(country_data);
     console.log('border-exist', borders_exist);
     return(
