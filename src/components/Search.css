@@ -14,9 +14,9 @@
     box-shadow:  0 5px 10px 1px hsl(0, 0%, 93%);
 }
 .input_box.light{
-    background-image: url('./light-mode-search.svg');
+    background-image: url('/light-mode-search.svg');
 }
 .input_box.dark{
-    background-image: url('./dark-mode-search.svg');
+    background-image: url('/dark-mode-search.svg');
     background-color: #2B3844;
 }
