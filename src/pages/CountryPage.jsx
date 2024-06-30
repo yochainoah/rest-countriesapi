@@ -6,6 +6,7 @@ export default function CountryPage(){
     let border_countries = [];
     const {theme} = useTheme();
     const {countryName} = useParams();
+    console.log('countryName from URL:', countryName);
     const country_data = data.find((country) => country.name === countryName);
     const arrow_color = theme === 'light'?  "./arrow-back-light.svg": "./arrow-back-dark.svg" ;
     console.log('country data',country_data)
@@ -50,7 +51,7 @@ export default function CountryPage(){
                     <ul className="border_countries">
                         {border_countries.map((country) => {
                             return <li key={country} className={theme}>
-                                <Link className={theme} to={`/${country}`}>{country}</Link>
+                                <Link className={theme} to={`/country/${country}`}>{country}</Link>
                             </li>
                         })}
                     </ul>

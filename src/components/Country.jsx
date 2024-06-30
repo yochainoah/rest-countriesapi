@@ -6,7 +6,7 @@ import { useTheme } from '../ThemeContext';
 function Country({country}){
     const { theme} = useTheme();
     return (
-        <Link to={country.name} className={`country_card ${theme}`}>
+        <Link to={`/country/${country.name}`} className={`country_card ${theme}`}>
             <img src={country.flags.svg}/>
             <div className='country_details'>
                 <h3>{country.name}</h3>

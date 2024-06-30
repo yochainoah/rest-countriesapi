@@ -3,8 +3,8 @@ import HomePage from './pages/HomePage';
 import Header from './components/Header';
 import { Routes ,Route} from 'react-router-dom';
 import CountryPage from './pages/CountryPage';
-import { useState } from 'react';
 
+// www.domain.com/
 
 function App() {
   
@@ -13,8 +13,8 @@ function App() {
         <>
           <Header/>
           <Routes>
-            <Route index element={<HomePage/>}/>
-            <Route path="/:countryName" element={<CountryPage />}/>
+            <Route path="/country/:countryName" element={<CountryPage />}/>
+            <Route path="*" element={<HomePage/>}/>
           </Routes>
         </>
 
